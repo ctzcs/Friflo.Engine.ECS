@@ -18,7 +18,7 @@ internal readonly struct SignatureIndexes
 {
     internal readonly   int     length; // 4    - values: [1, 5] ensured by assertion
     
-    internal readonly   byte    T1;     // 1
+    /* internal readonly   byte    T1;     // 1
     internal readonly   byte    T2;     // 1
     internal readonly   byte    T3;     // 1
     internal readonly   byte    T4;     // 1
@@ -27,7 +27,18 @@ internal readonly struct SignatureIndexes
     private  readonly   byte    T7;     // 1
     private  readonly   byte    T8;     // 1
     private  readonly   byte    T9;     // 1
-    private  readonly   byte    T10;    // 1
+    private  readonly   byte    T10;    // 1 */
+
+    internal readonly   ushort  T1;     // 2
+    internal readonly   ushort  T2;     // 2
+    internal readonly   ushort  T3;     // 2
+    internal readonly   ushort  T4;     // 2
+    internal readonly   ushort  T5;     // 2
+    private  readonly   ushort  T6;     // 2
+    private  readonly   ushort  T7;     // 2
+    private  readonly   ushort  T8;     // 2
+    private  readonly   ushort  T9;     // 2
+    private  readonly   ushort  T10;    // 2
     
     public   SignatureIndexesEnumerator GetEnumerator() => new (this);
     
